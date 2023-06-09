@@ -38,7 +38,7 @@ public enum Command implements CommandI {
 //                String str = "2016-09-12T13:15:17.309Z";
                 long durationInSecond = Long.parseLong(args[1]);
                 List<Integer> userIds = new ArrayList<>();
-                for (int i = 3; i < args.length; ++i) {
+                for (int i = 2; i < args.length; ++i) {
                     userIds.add(Integer.parseInt(args[i]));
                 }
                 CalendarService calendar = CalendarService.getCalendarService();
